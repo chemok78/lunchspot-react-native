@@ -10,6 +10,7 @@ import {
 
 } from '@shoutem/ui';
 
+//We only render in this component, so we pass in everything as props instead of this.props
 const RecommendationsMap = ({ mapRegion, gpsAccuracy, recommendations, lookingFor,
                               headerLocation, onRegionChange }) => (
 

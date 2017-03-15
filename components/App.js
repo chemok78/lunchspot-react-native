@@ -54,6 +54,8 @@ export default class App extends Component {
        const { mapRegion, lookingFor } = this.state;
 
        if (mapRegion) {
+       //pass in the whole state as props with {..this.state}, is ES6 spread operator
+       //pass onRegionChange as prop, we want user move map and location move as the same behavior   
            return (
                <Screen>
                    <RecommendationsMap {...this.state} onRegionChange={this.onRegionChange.bind(this)} />
